@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="about">
+        <h1>Password Generator</h1>
+        <div class="aboutContent">
+            <p>1 million passwords where stolen every week in 2019, according to Breach Alarm, and
+                81% of those could be the result of a weak password.
+                This password generator comes to dificult the job of hackers, and make your account
+                safer.
+            </p>
+            <ul>Tips:
+                <li>
+                    Write down your login and password and store in a safe physical place
+                    (not in your computer).
+                </li>
+                <li>Try to use a minimun of 12 characters.</li>
+                <li>Make sure to check the boxes</li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pw">Click in "Generate Password"</span>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="len">- Password Length (12 recomended)</label>
+                <input class="length" id="len" value="12" type="number" min="2" max="30" />
+            </div>
+            <div class="form-control">
+                <label for="upper">- Contain Uppercase Letters</label>
+                <input id="upper" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="lower">- Contain Lowercase Letters</label>
+                <input id="lower" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="number">- Contain Numbers</label>
+                <input id="number" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="symbol">- Contain Symbols</label>
+                <input id="symbol" type="checkbox" />
+            </div>
+            <button class="generate" id="generate">
+                Generate Password
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
